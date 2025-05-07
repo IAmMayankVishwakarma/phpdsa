@@ -1,0 +1,3 @@
+1). string to binary conversion.
+2). add currency comma for diffrent input
+3). 
