@@ -17,13 +17,13 @@
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
       $inputString = $_POST['inputString'];
       $frequency = count_chars($inputString, 1);
-          print_r($frequency);
+          // print_r($frequency);
       echo "<h2>Character Frequency:</h2>";
       foreach ($frequency as $char => $count) {
           echo "Character '" . chr($char) . "' appears " . $count . " times.<br>";
       }
   }
-  ?>
+?>
 
 
 </body>
