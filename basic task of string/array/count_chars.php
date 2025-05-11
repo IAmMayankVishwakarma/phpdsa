@@ -10,11 +10,24 @@
   $car = array("brand"=>"Ford", "model"=>"Mustang", "year"=>1964);
  echo "lenght of characters is ". count($car). "<br/>"; //count the length of array
   foreach($car as $key=>$value){
-   echo $key . " ---->" . $value . "<br/>";
+   echo $key . " >>" . $value . "<br/>";
  } 
   
   ?>
-<?php ?>
+<?php
+function charactercount($string){
+  $count = count_chars("$string",1);
+
+  foreach($count as $key => $value){
+    echo chr($key) . " ----> " . $value . "<br/>";
+  }
+  }
+charactercount("this");
+charactercount("hello");
+charactercount("Mayank");
+
+
+?>
 
 </body>
 </html>
